@@ -8,11 +8,11 @@
 # Source0 file verified with key 0xD7574483BB57B18D (jr@jriddell.org)
 #
 Name     : kpipewire
-Version  : 6.0.2
-Release  : 27
-URL      : https://download.kde.org/stable/plasma/6.0.2/kpipewire-6.0.2.tar.xz
-Source0  : https://download.kde.org/stable/plasma/6.0.2/kpipewire-6.0.2.tar.xz
-Source1  : https://download.kde.org/stable/plasma/6.0.2/kpipewire-6.0.2.tar.xz.sig
+Version  : 6.0.3
+Release  : 28
+URL      : https://download.kde.org/stable/plasma/6.0.3/kpipewire-6.0.3.tar.xz
+Source0  : https://download.kde.org/stable/plasma/6.0.3/kpipewire-6.0.3.tar.xz
+Source1  : https://download.kde.org/stable/plasma/6.0.3/kpipewire-6.0.3.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause CC0-1.0 GPL-3.0 LGPL-2.1 LGPL-3.0
@@ -95,15 +95,15 @@ locales components for the kpipewire package.
 
 
 %prep
-%setup -q -n kpipewire-6.0.2
-cd %{_builddir}/kpipewire-6.0.2
+%setup -q -n kpipewire-6.0.3
+cd %{_builddir}/kpipewire-6.0.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1711147381
+export SOURCE_DATE_EPOCH=1711647818
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -164,7 +164,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1711147381
+export SOURCE_DATE_EPOCH=1711647818
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kpipewire
 cp %{_builddir}/kpipewire-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kpipewire/3630f1ffcec0e075bf446b88c7b507b1287b571d || :
@@ -220,18 +220,18 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKPipeWire.so.6.0.2
-/V3/usr/lib64/libKPipeWireDmaBuf.so.6.0.2
-/V3/usr/lib64/libKPipeWireRecord.so.6.0.2
+/V3/usr/lib64/libKPipeWire.so.6.0.3
+/V3/usr/lib64/libKPipeWireDmaBuf.so.6.0.3
+/V3/usr/lib64/libKPipeWireRecord.so.6.0.3
 /V3/usr/lib64/qt6/qml/org/kde/pipewire/libKPipeWireDeclarative.so
 /V3/usr/lib64/qt6/qml/org/kde/pipewire/monitor/libKPipeWireMonitorDeclarative.so
 /V3/usr/lib64/qt6/qml/org/kde/pipewire/record/libKPipeWireRecordDeclarative.so
 /usr/lib64/libKPipeWire.so.6
-/usr/lib64/libKPipeWire.so.6.0.2
+/usr/lib64/libKPipeWire.so.6.0.3
 /usr/lib64/libKPipeWireDmaBuf.so.6
-/usr/lib64/libKPipeWireDmaBuf.so.6.0.2
+/usr/lib64/libKPipeWireDmaBuf.so.6.0.3
 /usr/lib64/libKPipeWireRecord.so.6
-/usr/lib64/libKPipeWireRecord.so.6.0.2
+/usr/lib64/libKPipeWireRecord.so.6.0.3
 /usr/lib64/qt6/qml/org/kde/pipewire/KPipeWireDeclarative.qmltypes
 /usr/lib64/qt6/qml/org/kde/pipewire/kde-qmlmodule.version
 /usr/lib64/qt6/qml/org/kde/pipewire/libKPipeWireDeclarative.so
