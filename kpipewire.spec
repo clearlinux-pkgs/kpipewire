@@ -9,7 +9,7 @@
 #
 Name     : kpipewire
 Version  : 6.2.0
-Release  : 51
+Release  : 52
 URL      : https://download.kde.org/stable/plasma/6.2.0/kpipewire-6.2.0.tar.xz
 Source0  : https://download.kde.org/stable/plasma/6.2.0/kpipewire-6.2.0.tar.xz
 Source1  : https://download.kde.org/stable/plasma/6.2.0/kpipewire-6.2.0.tar.xz.sig
