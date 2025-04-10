@@ -9,7 +9,7 @@
 #
 Name     : kpipewire
 Version  : 6.3.4
-Release  : 63
+Release  : 64
 URL      : https://download.kde.org/stable/plasma/6.3.4/kpipewire-6.3.4.tar.xz
 Source0  : https://download.kde.org/stable/plasma/6.3.4/kpipewire-6.3.4.tar.xz
 Source1  : https://download.kde.org/stable/plasma/6.3.4/kpipewire-6.3.4.tar.xz.sig
